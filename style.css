@@ -50,6 +50,38 @@ a {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 }
 
+#js {
+    fill: #F7E018;
+}
+
+#node-js {
+    fill: ;
+}
+
+#react {
+    fill: ;
+}
+
+#html {
+    fill: ;
+}
+
+#git {
+    fill: ;
+}
+
+#css {
+    fill: ;
+}
+
+#github {
+    fill: ;
+}
+
+#bootstrap {
+    fill: ;
+}
+
 #learning {
     background-color: #7e7f7f;
     color: #302F3D;
@@ -65,11 +97,6 @@ a {
 .language {
     border-radius: 30px;
     background-color: #12677e;
-    color: #ffffff;
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     cursor: default;
 }
 
@@ -388,6 +415,7 @@ figcaption {
     .tools>svg {
         margin: 5px;
         padding-right: 15px;
+        height: 25px;
     }
 
     .tool {
@@ -396,17 +424,14 @@ figcaption {
 
     .html {
         fill: #DD4B25;
-        height: 25px;
     }
 
     .css {
         fill: #254BDD;
-        height: 25px;
     }
 
     .js {
         fill: #F7E018;
-        height: 25px;
     }
 
     /* Box descritiva dos últimos posts */
@@ -652,25 +677,23 @@ figcaption {
     .tools>svg {
         margin: 5px;
         padding-right: 15px;
+        height: 25px;
     }
 
     .tool {
-        padding: 0 3px 0 0;
+        gap: 0 3px 0 0;
     }
 
     .html {
         fill: #DD4B25;
-        height: 25px;
     }
 
     .css {
         fill: #254BDD;
-        height: 25px;
     }
 
     .js {
         fill: #F7E018;
-        height: 25px;
     }
 
     /* Box descritiva dos últimos posts */
@@ -921,6 +944,7 @@ figcaption {
     .tools>svg {
         margin: 5px;
         padding-right: 15px;
+        height: 25px;
     }
 
     .tool {
@@ -929,17 +953,14 @@ figcaption {
 
     .html {
         fill: #DD4B25;
-        height: 25px;
     }
 
     .css {
         fill: #254BDD;
-        height: 25px;
     }
 
     .js {
         fill: #F7E018;
-        height: 25px;
     }
 
     /* Box descritiva dos últimos posts */
@@ -1190,6 +1211,7 @@ figcaption {
     .tools>svg {
         margin: 5px;
         padding-right: 15px;
+        height: 25px;
     }
 
     .tool {
@@ -1198,17 +1220,14 @@ figcaption {
 
     .html {
         fill: #DD4B25;
-        height: 25px;
     }
 
     .css {
         fill: #254BDD;
-        height: 25px;
     }
 
     .js {
         fill: #F7E018;
-        height: 25px;
     }
 
     /* Box descritiva dos últimos posts */
@@ -1459,6 +1478,7 @@ figcaption {
     .tools>svg {
         margin: 5px;
         padding-right: 15px;
+        height: 25px;
     }
 
     .tool {
@@ -1467,17 +1487,14 @@ figcaption {
 
     .html {
         fill: #DD4B25;
-        height: 30px;
     }
 
     .css {
         fill: #254BDD;
-        height: 30px;
     }
 
     .js {
         fill: #F7E018;
-        height: 30px;
     }
 
     /* Box descritiva dos últimos posts */
@@ -1728,6 +1745,7 @@ figcaption {
     .tools>svg {
         margin: 5px;
         padding-right: 15px;
+        height: 25px;
     }
 
     .tool {
@@ -1736,17 +1754,14 @@ figcaption {
 
     .html {
         fill: #DD4B25;
-        height: 30px;
     }
 
     .css {
         fill: #254BDD;
-        height: 30px;
     }
 
     .js {
         fill: #F7E018;
-        height: 30px;
     }
 
     /* Box descritiva dos últimos posts */
@@ -1997,6 +2012,7 @@ figcaption {
     .tools>svg {
         margin: 5px;
         padding-right: 15px;
+        height: 25px;
     }
 
     .tool {
@@ -2005,17 +2021,14 @@ figcaption {
 
     .html {
         fill: #DD4B25;
-        height: 30px;
     }
 
     .css {
         fill: #254BDD;
-        height: 30px;
     }
 
     .js {
         fill: #F7E018;
-        height: 30px;
     }
 
     /* Box descritiva dos últimos posts */
