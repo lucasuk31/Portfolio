@@ -50,36 +50,49 @@ a {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 }
 
+#techs1,
+#techs2,
+#techs3 {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    justify-content: center;
+}
+
 #js {
     fill: #F7E018;
 }
 
 #node-js {
-    fill: ;
+    fill: #9ABF50;
 }
 
 #react {
-    fill: ;
+    fill: #00A9D9;
 }
 
 #html {
-    fill: ;
+    fill: #F16529;
 }
 
 #git {
-    fill: ;
+    fill: #E84D31;
 }
 
 #css {
-    fill: ;
+    fill: #0091D5;
 }
 
 #github {
-    fill: ;
+    fill: #000000;
 }
 
 #bootstrap {
-    fill: ;
+    fill: #7A11F3;
+}
+
+#sass {
+    fill: #7A11F3;
 }
 
 #learning {
@@ -96,9 +109,11 @@ a {
 
 .language {
     border-radius: 30px;
-    background-color: #12677e;
+    background-color: #12677e4e;
     cursor: default;
 }
+
+
 
 /* Box das experiências profissionais */
 #experiences {
@@ -218,14 +233,6 @@ figcaption {
     border-radius: 15px;
 }
 
-#techs1,
-#techs2,
-#techs3 {
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
-}
-
 @media screen and (min-width: 320px) {
 
     body {
@@ -306,7 +313,7 @@ figcaption {
     #technologies {
         width: 77.6%;
         /* 270px/348px */
-        height: 208px;
+        height: 180px;
         display: flex;
         flex-direction: column;
     }
@@ -317,13 +324,12 @@ figcaption {
     }
 
     .language {
-        width: 86px;
+        width: 70px;
         height: 24px;
         font-size: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 5px 0 5px;
     }
 
     /* Box das experiências profissionais */
@@ -578,13 +584,13 @@ figcaption {
     }
 
     .language {
-        width: 86px;
+        width: 100px;
         height: 24px;
         font-size: 12px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 5px 0 5px;
+        margin: 5px;
     }
 
     /* Box das experiências profissionais */
@@ -767,6 +773,7 @@ figcaption {
         align-items: center;
         margin: 0;
         padding: 0;
+        width: 90%;
     }
 
     main {
@@ -782,7 +789,7 @@ figcaption {
 
     /* Box do perfil, contendo foto, nome e stack */
     #profile {
-        width: 70%;
+        width: 90%;
         /* 270px/348px */
         height: 220px;
         display: flex;
@@ -810,7 +817,7 @@ figcaption {
 
     /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
     #about {
-        width: 70%;
+        width: 90%;
         /* 270px/348px */
         height: 280px;
         border-radius: 20px;
@@ -820,7 +827,7 @@ figcaption {
     }
 
     #about>div {
-        font-size: 13px;
+        font-size: 12px;
         margin-left: 10px;
         display: flex;
         align-items: center;
@@ -832,8 +839,7 @@ figcaption {
 
     /* Box das tecnologias que o dev manja */
     #technologies {
-        width: 70%;
-        /* 270px/348px */
+        width: 90%;
         height: 208px;
         display: flex;
         flex-direction: column;
@@ -845,19 +851,22 @@ figcaption {
     }
 
     .language {
-        width: 86px;
+        width: 50px;
         height: 24px;
-        font-size: 10px;
-        padding: 3px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 5px 0 5px;
+    }
+
+    #techs1>div,
+    #techs2>div,
+    #techs3>div {
+        padding-right: 5px;
     }
 
     /* Box das experiências profissionais */
     #experiences {
-        width: 70%;
+        width: 90%;
         /* 270px/348px */
         height: 240px;
         display: flex;
@@ -871,9 +880,9 @@ figcaption {
 
     /* Box da formação acadêmica do dev */
     #education {
-        width: 70%;
+        width: 90%;
         /* 270px/348px */
-        height: 330px;
+        height: 360px;
         display: flex;
         flex-direction: column;
     }
@@ -1049,7 +1058,7 @@ figcaption {
 
     /* Box do perfil, contendo foto, nome e stack */
     #profile {
-        width: 70%;
+        width: 95%;
         /* 270px/348px */
         height: 220px;
         display: flex;
@@ -1077,7 +1086,7 @@ figcaption {
 
     /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
     #about {
-        width: 70%;
+        width: 95%;
         /* 270px/348px */
         height: 280px;
         border-radius: 20px;
@@ -1099,7 +1108,7 @@ figcaption {
 
     /* Box das tecnologias que o dev manja */
     #technologies {
-        width: 70%;
+        width: 95%;
         /* 270px/348px */
         height: 208px;
         display: flex;
@@ -1112,19 +1121,23 @@ figcaption {
     }
 
     .language {
-        width: 86px;
+        width: 60px;
         height: 24px;
-        font-size: 10px;
-        padding: 3px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 5px 0 5px;
+        margin: 0 15px 0 5px;
+    }
+
+    #techs1>div,
+    #techs2>div,
+    #techs3>div {
+        padding: 5px;
     }
 
     /* Box das experiências profissionais */
     #experiences {
-        width: 70%;
+        width: 95%;
         /* 270px/348px */
         height: 240px;
         display: flex;
@@ -1138,7 +1151,7 @@ figcaption {
 
     /* Box da formação acadêmica do dev */
     #education {
-        width: 70%;
+        width: 95%;
         /* 270px/348px */
         height: 330px;
         display: flex;
@@ -1316,7 +1329,7 @@ figcaption {
 
     /* Box do perfil, contendo foto, nome e stack */
     #profile {
-        width: 75%;
+        width: 90%;
         /* 270px/348px */
         height: 220px;
         display: flex;
@@ -1344,7 +1357,7 @@ figcaption {
 
     /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
     #about {
-        width: 75%;
+        width: 90%;
         /* 270px/348px */
         height: 280px;
         border-radius: 20px;
@@ -1366,7 +1379,7 @@ figcaption {
 
     /* Box das tecnologias que o dev manja */
     #technologies {
-        width: 75%;
+        width: 90%;
         /* 270px/348px */
         height: 208px;
         display: flex;
@@ -1379,9 +1392,8 @@ figcaption {
     }
 
     .language {
-        width: 86px;
+        width: 55px;
         height: 24px;
-        font-size: 10px;
         padding: 3px;
         display: flex;
         justify-content: center;
@@ -1391,7 +1403,7 @@ figcaption {
 
     /* Box das experiências profissionais */
     #experiences {
-        width: 75%;
+        width: 90%;
         /* 270px/348px */
         height: 240px;
         display: flex;
@@ -1405,7 +1417,7 @@ figcaption {
 
     /* Box da formação acadêmica do dev */
     #education {
-        width: 75%;
+        width: 90%;
         /* 270px/348px */
         height: 330px;
         display: flex;
@@ -1583,7 +1595,7 @@ figcaption {
 
     /* Box do perfil, contendo foto, nome e stack */
     #profile {
-        width: 75%;
+        width: 85%;
         /* 270px/348px */
         height: 220px;
         display: flex;
@@ -1611,7 +1623,7 @@ figcaption {
 
     /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
     #about {
-        width: 75%;
+        width: 85%;
         /* 270px/348px */
         height: 280px;
         border-radius: 20px;
@@ -1633,7 +1645,7 @@ figcaption {
 
     /* Box das tecnologias que o dev manja */
     #technologies {
-        width: 75%;
+        width: 85%;
         /* 270px/348px */
         height: 208px;
         display: flex;
@@ -1646,19 +1658,17 @@ figcaption {
     }
 
     .language {
-        width: 86px;
+        width: 65px;
         height: 24px;
-        font-size: 10px;
-        padding: 3px;
+        padding: 1px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 5px 0 5px;
     }
 
     /* Box das experiências profissionais */
     #experiences {
-        width: 75%;
+        width: 85%;
         /* 270px/348px */
         height: 240px;
         display: flex;
@@ -1672,7 +1682,7 @@ figcaption {
 
     /* Box da formação acadêmica do dev */
     #education {
-        width: 75%;
+        width: 85%;
         /* 270px/348px */
         height: 330px;
         display: flex;
@@ -1913,7 +1923,7 @@ figcaption {
     }
 
     .language {
-        width: 86px;
+        width: 80px;
         height: 24px;
         font-size: 12px;
         padding: 3px;
@@ -1976,7 +1986,7 @@ figcaption {
     #files {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         width: 95%;
         height: 200px;
@@ -1985,10 +1995,10 @@ figcaption {
     /* Box dos códigos */
     #file1,
     #file2 {
-        width: 410px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        flex-shrink: 1;
     }
 
     .fileName {
@@ -2053,7 +2063,7 @@ figcaption {
     }
 
     .mySlides {
-        width: 100%;
+        width: 85%;
         height: 500px;
     }
 
