@@ -1,62 +1,46 @@
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     width: 100%;
     background: #22212C;
     font-family: Merriweather Sans;
     color: rgb(131, 126, 159);
-}
-
-#profile {
-    border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-}
-
-#perfil {
-    object-fit: cover;
-}
-
-#name {
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-#stack {
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-#about {
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-}
-
-#about>div {
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-a {
-    color: #837E9F;
-    text-decoration: none;
+    padding: 1rem;
 }
 
 /* Box das tecnologias que o dev manja */
 #technologies {
-    border-radius: 20px;
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1.5rem;
     background-color: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 }
 
-#techs1,
-#techs2,
-#techs3 {
+#techs {
     display: flex;
-    padding: 5px;
-    width: 100%;
     justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top: 1rem;
+    gap: .3rem;
+}
+
+.language {
+    background-color: #12677e4e;
+    width: 30%;
+    padding: .1rem;
+    border-radius: 1.5rem;
+}
+
+#learning {
+    background-color: #babcbc1b;
+    width: 30%;
+    padding: .1rem;
+    border-radius: 1.5rem;
+    fill: #707070;
 }
 
 #js {
@@ -92,116 +76,44 @@ a {
 }
 
 #sass {
-    fill: #7A11F3;
+    fill: #C76494;
 }
 
-#learning {
-    background-color: #7e7f7f;
-    color: #302F3D;
-    cursor: help;
+#scale {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.topic {
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+#scale > div {
+    margin: .5rem;
 }
 
-.language {
-    border-radius: 30px;
+#ok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #12677e4e;
-    cursor: default;
+    padding: .5rem;
+    width: 30%;
+    height: 20px;
+    border-radius: 1.5rem;
+    fill: rgb(107, 181, 87);
 }
 
-
-
-/* Box das experiências profissionais */
-#experiences {
-    border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-}
-
-/* Box da formação acadêmica do dev */
-#education {
-    border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-}
-
-/* Header de todos os projetos */
-#projectsHome {
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-}
-
-#projetcDescription {
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.all {
-    text-decoration: none;
-    color: #837E9F;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* Box dos códigos */
-#file1,
-#file2 {
-    border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-    cursor: context-menu;
-}
-
-.fileName {
-    cursor: pointer;
-}
-
-.fileDescription {
-    cursor: pointer;
-}
-
-/* Box descritiva dos últimos posts */
-#recents {
-    border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-}
-
-#recents>span {
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-/* Posts */
-#posts {
-    border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-}
-
-.mySlides {
-    display: none;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-#show {
-    display: block;
-    object-fit: cover;
-}
-
-.project {
-    border-radius: 15px;
-    cursor: pointer;
-    opacity: 0.5;
-    object-fit: cover;
+#toLearn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #babcbc1b;
+    padding: .5rem;
+    width: 30%;
+    height: 20px;
+    border-radius: 1.5rem;
+    fill: #707070;
 }
 
 .project:hover {
@@ -210,10 +122,6 @@ a {
 
 .projectOpacity {
     opacity: 1;
-}
-
-figcaption {
-    text-align: center;
 }
 
 /* Configurações do scrollbar */
@@ -235,240 +143,229 @@ figcaption {
 
 @media screen and (min-width: 320px) {
 
-    body {
-        display: block;
-        width: 100%;
-        margin: auto;
-        margin: 20px auto 20px auto;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 1350px;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5px;
-        height: 820px;
-    }
-
-    /* Box do perfil, contendo foto, nome e stack */
     #profile {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 220px;
+        width: 70%;
+        margin: auto;
+        border-radius: 1.5rem;
+        background: #302F3D;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 1rem;
     }
 
     #perfil {
+        object-fit: cover;
         width: 100px;
         height: 100px;
-        border-radius: 128px;
+        border-radius: 50%;
+        margin: 0 0 1rem 0;
     }
 
     #name {
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     #stack {
-        display: flex;
-        font-size: 14px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
     }
 
-    /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
     #about {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 280px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        background: #302F3D;
+        width: 70%;
+        margin: 1rem auto;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+        padding: 1rem;
+        border-radius: 1.5rem;
     }
 
     #about>div {
-        font-size: 14px;
-        margin-left: 20px;
         display: flex;
+        justify-content: flex-start;
         align-items: center;
+        padding: .5rem 0 .5rem 0;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        gap: .7rem;
     }
 
-    svg {
-        margin-right: 5px;
-    }
-
-    /* Box das tecnologias que o dev manja */
-    #technologies {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 180px;
-        display: flex;
-        flex-direction: column;
+    a {
+        color: #837E9F;
+        text-decoration: none;
     }
 
     .topic {
-        font-size: 20px;
-        padding: 20px 0 15px 20px;
-    }
-
-    .language {
-        width: 70px;
-        height: 24px;
-        font-size: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 18px;
+        padding: .5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     /* Box das experiências profissionais */
     #experiences {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 240px;
-        display: flex;
-        flex-direction: column;
+        width: 70%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        background: #302F3D;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
     }
 
-    #xp>li {
-        padding: 0 0 15px 0;
-        font-size: 13.5px;
+    li {
+        font-size: 14px;
+        padding: .5rem;
     }
 
     /* Box da formação acadêmica do dev */
     #education {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 330px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #school>li {
-        padding: 0 0 15px 0;
-        font-size: 13.5px;
+        width: 70%;
+        margin: 0 auto 1rem auto;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        background: #302F3D;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
     }
 
     /* Header de todos os projetos */
     #projectsHome {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 50px;
+        background: #302F3D;
+        width: 70%;
+        margin: auto;
+        padding: .8rem;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        border-radius: 20px;
     }
 
     #projetcDescription {
-        margin: 20px;
-        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     .all {
-        margin: 20px;
-        font-size: 14px;
-    }
-
-    /* Uma div para deixar os códigos acessíveis a quem quiser ver */
-    #files {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 400px;
+        text-decoration: none;
+        color: #837E9F;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     /* Box dos códigos */
+    #files {
+        margin: 1rem auto 1rem auto;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1rem;
+    }
+
     #file1,
     #file2 {
-        width: 77.6%;
-        height: 186px;
+        width: 70%;
+        margin: auto;
+        flex-basis: 50%;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        font-size: 14px;
+        gap: 1rem;
+        background: #302F3D;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+        cursor: context-menu;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin: auto;
+        justify-content: center;
+    }
+
+    .fileDescription {
+        padding-top: 1rem;
     }
 
     .fileName {
         display: flex;
-        flex-direction: row;
         align-items: center;
     }
 
-    #file1>div,
-    #file2>div {
-        padding-left: 10px;
+    .fileName>svg {
+        padding-right: .5rem;
     }
 
     .tools {
+        height: 2rem;
+        padding-top: 1rem;
+        gap: .5rem;
         display: flex;
-        flex-direction: row;
         justify-content: flex-end;
-        align-items: center;
     }
 
-    .tools>svg {
-        margin: 5px;
-        padding-right: 15px;
-        height: 25px;
+    #projetcDescription {
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
-    .tool {
-        padding: 0 3px 0 0;
-    }
-
-    .html {
-        fill: #DD4B25;
-    }
-
-    .css {
-        fill: #254BDD;
-    }
-
-    .js {
-        fill: #F7E018;
+    .all {
+        text-decoration: none;
+        color: #837E9F;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     /* Box descritiva dos últimos posts */
     #recents {
-        width: 77.6%;
-        height: 50px;
+        width: 70%;
+        margin: auto;
+        padding: .8rem;
+        border-radius: 1rem;
+        background: #302F3D;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        margin-bottom: 10px;
     }
 
     #recents>span {
-        margin: 20px;
-        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     /* Posts */
     #posts {
-        width: 77.6%;
+        width: 75%;
         height: 300px;
+        margin: auto;
+        margin-top: 1rem;
+        border-radius: .5rem;
+        background: #302F3D;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
     }
 
     .mySlides {
         width: 100%;
         height: 300px;
+        display: none;
+        object-fit: cover;
+        border-radius: .5rem;
     }
 
     #show {
         width: 100%;
         height: 300px;
+        display: block;
+        object-fit: cover;
     }
 
     #myProjects {
@@ -476,281 +373,90 @@ figcaption {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 1rem;
     }
 
     .project {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
+        border-radius: .5rem;
+        cursor: pointer;
+        opacity: 0.5;
+        object-fit: cover;
     }
 
     figure {
-        margin: 10px 0 10px 0;
+        margin: 0;
     }
 
     figcaption {
         font-size: 10px;
+        text-align: center;
         text-decoration: underline;
     }
 }
 
 @media screen and (min-width: 480px) {
 
-    body {
-        display: block;
-        width: 100%;
-        margin: auto;
-        margin: 20px auto 20px auto;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 1350px;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5px;
-        height: 650px;
-    }
-
-    /* Box do perfil, contendo foto, nome e stack */
-    #profile {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 220px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #perfil {
-        width: 110px;
-        height: 110px;
-        border-radius: 128px;
-    }
-
     #name {
-        font-size: 23px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        font-size: 22px;
     }
 
     #stack {
-        display: flex;
         font-size: 16px;
-    }
-
-    /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
-    #about {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 280px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
 
     #about>div {
         font-size: 16px;
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
-    }
-
-    svg {
-        margin-right: 5px;
-    }
-
-    /* Box das tecnologias que o dev manja */
-    #technologies {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 208px;
-        display: flex;
-        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
     }
 
     .topic {
-        font-size: 22px;
-        padding: 20px 0 15px 20px;
-    }
-
-    .language {
-        width: 100px;
-        height: 24px;
-        font-size: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5px;
-    }
-
-    /* Box das experiências profissionais */
-    #experiences {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 240px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #xp>li {
-        padding: 0 0 15px 0;
-        font-size: 16px;
-    }
-
-    /* Box da formação acadêmica do dev */
-    #education {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 330px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #school>li {
-        margin-top: -8px;
-        padding-bottom: 15px;
-        font-size: 16px;
-    }
-
-    /* Header de todos os projetos */
-    #projectsHome {
-        width: 77.6%;
-        /* 270px/348px */
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    #projetcDescription {
-        margin: 20px;
         font-size: 20px;
+        padding: .8rem;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    #projectsHome,
+    #recents {
+        font-size: 18px;
+        padding: 1rem;
     }
 
     .all {
-        margin: 20px;
-        font-size: 14px;
-    }
-
-    /* Uma div para deixar os códigos acessíveis a quem quiser ver */
-    #files {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 77.6%;
-        height: 200px;
-    }
-
-    /* Box dos códigos */
-    #file1,
-    #file2 {
-        width: 175px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .fileName {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    #file1>div,
-    #file2>div {
-        padding-left: 10px;
-        font-size: 13.5px;
-    }
-
-    .tools {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .tools>svg {
-        margin: 5px;
-        padding-right: 15px;
-        height: 25px;
-    }
-
-    .tool {
-        gap: 0 3px 0 0;
-    }
-
-    .html {
-        fill: #DD4B25;
-    }
-
-    .css {
-        fill: #254BDD;
-    }
-
-    .js {
-        fill: #F7E018;
-    }
-
-    /* Box descritiva dos últimos posts */
-    #recents {
-        width: 77.6%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-
-    #recents>span {
-        margin: 20px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* Posts */
     #posts {
-        width: 77.6%;
-        height: 300px;
+        height: 400px;
     }
 
     .mySlides {
-        width: 100%;
-        height: 300px;
+        height: 400px;
     }
 
     #show {
-        width: 100%;
-        height: 300px;
-    }
-
-    #myProjects {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        height: 400px;
     }
 
     .project {
-        width: 100px;
-        height: 100px;
+        width: 105px;
+        height: 90px;
+        border-radius: .5rem;
     }
 
     figure {
-        margin: 10px 0 10px 0;
+        margin: 0;
     }
 
     figcaption {
-        font-size: 14px;
+        margin-bottom: 1rem;
+        font-size: 12px;
         text-decoration: underline;
     }
 }
@@ -760,1336 +466,163 @@ figcaption {
     body {
         display: flex;
         justify-content: space-around;
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 10px;
-        padding: 0;
+        gap: 1rem;
     }
 
     aside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        width: 90%;
+        flex-basis: 25%;
     }
 
     main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        width: 200%;
-        height: 670px;
+        flex-basis: 70%;
     }
 
-    /* Box do perfil, contendo foto, nome e stack */
-    #profile {
-        width: 90%;
-        /* 270px/348px */
-        height: 220px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #perfil {
-        width: 100px;
-        height: 100px;
-        border-radius: 128px;
-    }
-
-    #name {
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    #stack {
-        display: flex;
-        font-size: 14px;
-    }
-
-    /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
-    #about {
-        width: 90%;
-        /* 270px/348px */
-        height: 280px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    #profile,
+    #about,
+    #technologies,
+    #experiences,
+    #education {
+        width: 80%;
     }
 
     #about>div {
-        font-size: 12px;
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
+        font-size: 15px;
+        padding-left: 0;
+        gap: .5rem;
     }
 
-    svg {
-        margin-right: 5px;
+    li {
+        font-size: 15px;
     }
 
-    /* Box das tecnologias que o dev manja */
-    #technologies {
-        width: 90%;
-        height: 208px;
-        display: flex;
-        flex-direction: column;
+    #projectsHome,
+    #recents,
+    #posts {
+        width: 80%;
     }
 
-    .topic {
-        font-size: 20px;
-        padding: 20px 0 15px 20px;
-    }
-
-    .language {
-        width: 50px;
-        height: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #techs1>div,
-    #techs2>div,
-    #techs3>div {
-        padding-right: 5px;
-    }
-
-    /* Box das experiências profissionais */
-    #experiences {
-        width: 90%;
-        /* 270px/348px */
-        height: 240px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #xp>li {
-        padding: 0 0 15px 0;
-        font-size: 13.5px;
-    }
-
-    /* Box da formação acadêmica do dev */
-    #education {
-        width: 90%;
-        /* 270px/348px */
-        height: 360px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #school>li {
-        padding: 0 0 25px 0;
-        font-size: 13.5px;
-    }
-
-    /* Header de todos os projetos */
-    #projectsHome {
-        width: 90%;
-        /* 270px/348px */
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    #projetcDescription {
-        margin: 20px;
-        font-size: 20px;
-    }
-
-    .all {
-        margin: 20px;
-        font-size: 14px;
-    }
-
-    /* Uma div para deixar os códigos acessíveis a quem quiser ver */
-    #files {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 90%;
-        height: 200px;
-    }
-
-    /* Box dos códigos */
     #file1,
     #file2 {
-        width: 170px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .fileName {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    #file1>div,
-    #file2>div {
-        padding-left: 10px;
-        font-size: 13.5px;
-    }
-
-    .tools {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .tools>svg {
-        margin: 5px;
-        padding-right: 15px;
-        height: 25px;
-    }
-
-    .tool {
-        padding: 0 3px 0 0;
-    }
-
-    .html {
-        fill: #DD4B25;
-    }
-
-    .css {
-        fill: #254BDD;
-    }
-
-    .js {
-        fill: #F7E018;
-    }
-
-    /* Box descritiva dos últimos posts */
-    #recents {
-        width: 90%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-
-    #recents>span {
-        margin: 20px;
-        font-size: 20px;
-    }
-
-    /* Posts */
-    #posts {
-        width: 90%;
-        height: 300px;
-    }
-
-    .mySlides {
-        width: 100%;
-        height: 300px;
-    }
-
-    #show {
-        width: 100%;
-        height: 300px;
-    }
-
-    #myProjects {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        width: 80%;
+        font-size: 16px;
     }
 
     .project {
-        width: 110px;
-        height: 110px;
-    }
-
-    figure {
-        margin: 10px 0 10px 0;
-    }
-
-    figcaption {
-        font-size: 14px;
-        text-decoration: underline;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-    body {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 10px;
-        padding: 0;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        width: 200%;
-        height: 670px;
-    }
-
-    /* Box do perfil, contendo foto, nome e stack */
-    #profile {
-        width: 95%;
-        /* 270px/348px */
-        height: 220px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #perfil {
         width: 100px;
-        height: 100px;
-        border-radius: 128px;
+        height: 60px;
     }
 
-    #name {
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    #stack {
-        display: flex;
-        font-size: 14px;
-    }
-
-    /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
-    #about {
-        width: 95%;
-        /* 270px/348px */
-        height: 280px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    #about>div {
-        font-size: 13px;
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
-    }
-
-    svg {
-        margin-right: 5px;
-    }
-
-    /* Box das tecnologias que o dev manja */
-    #technologies {
-        width: 95%;
-        /* 270px/348px */
-        height: 208px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .topic {
-        font-size: 20px;
-        padding: 20px 0 15px 20px;
-    }
-
-    .language {
-        width: 60px;
-        height: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 15px 0 5px;
-    }
-
-    #techs1>div,
-    #techs2>div,
-    #techs3>div {
-        padding: 5px;
-    }
-
-    /* Box das experiências profissionais */
-    #experiences {
-        width: 95%;
-        /* 270px/348px */
-        height: 240px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #xp>li {
-        padding: 0 0 15px 0;
-        font-size: 13.5px;
-    }
-
-    /* Box da formação acadêmica do dev */
-    #education {
-        width: 95%;
-        /* 270px/348px */
-        height: 330px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #school>li {
-        padding: 0 0 25px 0;
-        font-size: 13.5px;
-    }
-
-    /* Header de todos os projetos */
-    #projectsHome {
-        width: 90%;
-        /* 270px/348px */
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    #projetcDescription {
-        margin: 30px;
-        font-size: 20px;
-    }
-
-    .all {
-        margin: 30px;
-        font-size: 14px;
-    }
-
-    /* Uma div para deixar os códigos acessíveis a quem quiser ver */
-    #files {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 90%;
-        height: 200px;
-    }
-
-    /* Box dos códigos */
-    #file1,
-    #file2 {
-        width: 190px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .fileName {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    #file1>div,
-    #file2>div {
-        padding-left: 10px;
-        font-size: 13.5px;
-    }
-
-    .tools {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .tools>svg {
-        margin: 5px;
-        padding-right: 15px;
-        height: 25px;
-    }
-
-    .tool {
-        padding: 0 3px 0 0;
-    }
-
-    .html {
-        fill: #DD4B25;
-    }
-
-    .css {
-        fill: #254BDD;
-    }
-
-    .js {
-        fill: #F7E018;
-    }
-
-    /* Box descritiva dos últimos posts */
-    #recents {
-        width: 90%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-
-    #recents>span {
-        margin: 20px;
-        font-size: 20px;
-    }
-
-    /* Posts */
-    #posts {
-        width: 90%;
-        height: 300px;
-    }
-
-    .mySlides {
-        width: 100%;
-        height: 300px;
-    }
-
-    #show {
-        width: 100%;
-        height: 300px;
-    }
-
-    #myProjects {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .project {
-        width: 120px;
-        height: 120px;
-    }
-
-    figure {
-        margin: 10px 0 10px 0;
-    }
-
-    figcaption {
-        font-size: 14px;
-        text-decoration: underline;
-    }
 }
 
 @media screen and (min-width: 900px) {
 
-    body {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 10px;
-        padding: 0;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        width: 200%;
-        height: 670px;
-    }
-
-    /* Box do perfil, contendo foto, nome e stack */
-    #profile {
+    #profile,
+    #about,
+    #technologies,
+    #experiences,
+    #education {
         width: 90%;
-        /* 270px/348px */
-        height: 220px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #perfil {
-        width: 100px;
-        height: 100px;
-        border-radius: 128px;
-    }
-
-    #name {
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    #stack {
-        display: flex;
-        font-size: 14px;
-    }
-
-    /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
-    #about {
-        width: 90%;
-        /* 270px/348px */
-        height: 280px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
 
     #about>div {
-        font-size: 13px;
-        margin-left: 15px;
-        display: flex;
-        align-items: center;
+        font-size: 16px;
+        padding-left: 0;
+        gap: .5rem;
     }
 
-    svg {
-        margin-right: 5px;
+    li {
+        font-size: 16px;
     }
 
-    /* Box das tecnologias que o dev manja */
-    #technologies {
-        width: 90%;
-        /* 270px/348px */
-        height: 208px;
-        display: flex;
-        flex-direction: column;
+    #projectsHome,
+    #recents,
+    #posts {
+        width: 80%;
     }
 
-    .topic {
-        font-size: 20px;
-        padding: 20px 0 15px 20px;
-    }
-
-    .language {
-        width: 55px;
-        height: 24px;
-        padding: 3px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 5px 0 5px;
-    }
-
-    /* Box das experiências profissionais */
-    #experiences {
-        width: 90%;
-        /* 270px/348px */
-        height: 240px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #xp>li {
-        padding: 0 0 15px 0;
-        font-size: 14px;
-    }
-
-    /* Box da formação acadêmica do dev */
-    #education {
-        width: 90%;
-        /* 270px/348px */
-        height: 330px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #school>li {
-        padding: 0 0 25px 0;
-        font-size: 14px;
-    }
-
-    /* Header de todos os projetos */
-    #projectsHome {
-        width: 95%;
-        /* 270px/348px */
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    #projetcDescription {
-        margin: 30px;
-        font-size: 20px;
-    }
-
-    .all {
-        margin: 30px;
-        font-size: 14px;
-    }
-
-    /* Uma div para deixar os códigos acessíveis a quem quiser ver */
     #files {
+        width: 85%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 95%;
-        height: 200px;
+        flex-wrap: nowrap;
     }
 
-    /* Box dos códigos */
     #file1,
     #file2 {
-        width: 260px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        height: 140px;
     }
 
     .fileName {
         display: flex;
-        flex-direction: row;
         align-items: center;
     }
 
-    #file1>div,
-    #file2>div {
-        padding-left: 20px;
-        font-size: 13.5px;
+    .fileName>svg {
+        padding-right: .5rem;
     }
 
     .tools {
+        height: 2rem;
+        gap: .5rem;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .tools>svg {
-        margin: 5px;
-        padding-right: 15px;
-        height: 25px;
-    }
-
-    .tool {
-        padding: 0 3px 0 0;
-    }
-
-    .html {
-        fill: #DD4B25;
-    }
-
-    .css {
-        fill: #254BDD;
-    }
-
-    .js {
-        fill: #F7E018;
-    }
-
-    /* Box descritiva dos últimos posts */
-    #recents {
-        width: 95%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-
-    #recents>span {
-        margin: 30px;
-        font-size: 20px;
-    }
-
-    /* Posts */
-    #posts {
-        width: 95%;
-        height: 300px;
-    }
-
-    .mySlides {
-        width: 100%;
-        height: 300px;
-    }
-
-    #show {
-        width: 100%;
-        height: 300px;
-    }
-
-    #myProjects {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     .project {
-        width: 170px;
-        height: 120px;
-    }
-
-    figure {
-        margin: 10px 0 10px 0;
+        width: 140px;
+        height: 90px;
+        border-radius: .5rem;
+        cursor: pointer;
+        opacity: 0.5;
+        object-fit: cover;
     }
 
     figcaption {
-        font-size: 14px;
-        text-decoration: underline;
+        font-size: 16px;
     }
 }
 
 @media screen and (min-width: 1024px) {
 
-    body {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 10px;
-        padding: 0;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        width: 200%;
-        height: 670px;
-    }
-
-    /* Box do perfil, contendo foto, nome e stack */
-    #profile {
-        width: 85%;
-        /* 270px/348px */
-        height: 220px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #perfil {
-        width: 100px;
-        height: 100px;
-        border-radius: 128px;
-    }
-
-    #name {
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    #stack {
-        display: flex;
-        font-size: 14px;
-    }
-
-    /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
-    #about {
-        width: 85%;
-        /* 270px/348px */
-        height: 280px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    #about>div {
-        font-size: 13px;
-        margin-left: 15px;
-        display: flex;
-        align-items: center;
-    }
-
-    svg {
-        margin-right: 5px;
-    }
-
-    /* Box das tecnologias que o dev manja */
-    #technologies {
-        width: 85%;
-        /* 270px/348px */
-        height: 208px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .topic {
-        font-size: 20px;
-        padding: 20px 0 15px 20px;
-    }
-
-    .language {
-        width: 65px;
-        height: 24px;
-        padding: 1px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Box das experiências profissionais */
-    #experiences {
-        width: 85%;
-        /* 270px/348px */
-        height: 240px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #xp>li {
-        padding: 0 0 15px 0;
-        font-size: 14px;
-    }
-
-    /* Box da formação acadêmica do dev */
-    #education {
-        width: 85%;
-        /* 270px/348px */
-        height: 330px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #school>li {
-        padding: 0 0 25px 0;
-        font-size: 14px;
-    }
-
-    /* Header de todos os projetos */
-    #projectsHome {
-        width: 95%;
-        /* 270px/348px */
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    #projetcDescription {
-        margin: 30px;
-        font-size: 20px;
-    }
-
-    .all {
-        margin: 30px;
-        font-size: 14px;
-    }
-
-    /* Uma div para deixar os códigos acessíveis a quem quiser ver */
     #files {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 95%;
-        height: 200px;
-    }
-
-    /* Box dos códigos */
-    #file1,
-    #file2 {
-        width: 320px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .fileName {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    #file1>div,
-    #file2>div {
-        padding-left: 20px;
-        font-size: 13.5px;
-    }
-
-    .tools {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .tools>svg {
-        margin: 5px;
-        padding-right: 15px;
-        height: 25px;
-    }
-
-    .tool {
-        padding: 0 3px 0 0;
-    }
-
-    .html {
-        fill: #DD4B25;
-    }
-
-    .css {
-        fill: #254BDD;
-    }
-
-    .js {
-        fill: #F7E018;
-    }
-
-    /* Box descritiva dos últimos posts */
-    #recents {
-        width: 95%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-
-    #recents>span {
-        margin: 30px;
-        font-size: 20px;
-    }
-
-    /* Posts */
-    #posts {
-        width: 95%;
-        height: 300px;
-    }
-
-    .mySlides {
-        width: 100%;
-        height: 300px;
-    }
-
-    #show {
-        width: 100%;
-        height: 300px;
-    }
-
-    #myProjects {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        width: 85%;
     }
 
     .project {
-        width: 210px;
-        height: 120px;
-    }
-
-    figure {
-        margin: 10px 0 10px 0;
+        width: 175px;
+        height: 90px;
+        border-radius: .5rem;
+        cursor: pointer;
+        opacity: 0.5;
+        object-fit: cover;
     }
 
     figcaption {
-        font-size: 14px;
-        text-decoration: underline;
+        font-size: 16px;
     }
 }
 
 @media screen and (min-width: 1200px) {
 
-    body {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 10px;
-        padding: 0;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        width: 200%;
-        height: 890px;
-    }
-
-    /* Box do perfil, contendo foto, nome e stack */
-    #profile {
-        width: 85%;
-        /* 270px/348px */
-        height: 220px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #perfil {
-        width: 120px;
-        height: 120px;
-        border-radius: 128px;
-    }
-
-    #name {
-        font-size: 21px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    #stack {
-        display: flex;
-        font-size: 15px;
-    }
-
-    /* Box de informações extras sobre o dev, localização, empresa, redes sociais, etc. */
-    #about {
-        width: 85%;
-        /* 270px/348px */
-        height: 280px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    #about>div {
-        font-size: 16px;
-        margin-left: 15px;
-        display: flex;
-        align-items: center;
-    }
-
-    svg {
-        margin-right: 5px;
-    }
-
-    /* Box das tecnologias que o dev manja */
-    #technologies {
-        width: 85%;
-        /* 270px/348px */
-        height: 208px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .topic {
-        font-size: 20px;
-        padding: 20px 0 15px 20px;
-    }
-
-    .language {
-        width: 80px;
-        height: 24px;
-        font-size: 12px;
-        padding: 3px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 5px 0 5px;
-    }
-
-    /* Box das experiências profissionais */
-    #experiences {
-        width: 85%;
-        /* 270px/348px */
-        height: 240px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #xp>li {
-        padding: 0 0 15px 0;
-        font-size: 16px;
-    }
-
-    /* Box da formação acadêmica do dev */
-    #education {
-        width: 85%;
-        /* 270px/348px */
-        height: 330px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #school>li {
-        padding: 0 0 25px 0;
-        font-size: 15px;
-    }
-
-    /* Header de todos os projetos */
-    #projectsHome {
-        width: 95%;
-        /* 270px/348px */
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    #projetcDescription {
-        margin: 30px;
-        font-size: 20px;
-    }
-
-    .all {
-        margin: 30px;
-        font-size: 14px;
-    }
-
-    /* Uma div para deixar os códigos acessíveis a quem quiser ver */
-    #files {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 95%;
-        height: 200px;
-    }
-
-    /* Box dos códigos */
-    #file1,
-    #file2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        flex-shrink: 1;
-    }
-
-    .fileName {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    #file1>div,
-    #file2>div {
-        padding-left: 20px;
-        font-size: 16px;
-    }
-
-    .tools {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .tools>svg {
-        margin: 5px;
-        padding-right: 15px;
-        height: 25px;
-    }
-
-    .tool {
-        padding: 0 3px 0 0;
-    }
-
-    .html {
-        fill: #DD4B25;
-    }
-
-    .css {
-        fill: #254BDD;
-    }
-
-    .js {
-        fill: #F7E018;
-    }
-
-    /* Box descritiva dos últimos posts */
-    #recents {
-        width: 95%;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-
-    #recents>span {
-        margin: 30px;
-        font-size: 20px;
-    }
-
     /* Posts */
     #posts {
-        width: 95%;
         height: 500px;
     }
 
     .mySlides {
-        width: 85%;
         height: 500px;
     }
 
     #show {
-        width: 100%;
         height: 500px;
     }
 
-    #myProjects {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    #files {
+        width: 82%;
     }
 
     .project {
-        width: 260px;
-        height: 150px;
-    }
-
-    figure {
-        margin: 10px 0 10px 0;
-    }
-
-    figcaption {
-        font-size: 16px;
-        text-decoration: underline;
+        width: 210px;
+        height: 90px;
     }
 }
